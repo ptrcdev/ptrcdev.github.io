@@ -1,3 +1,7 @@
+:root {
+    --greenish: rgb(5, 220, 80);
+    --navyish: #2f2f2f
+}
 * {
     margin: 0;
     padding: 0;
@@ -53,12 +57,13 @@ nav {
     display: inline-flex;
     align-items: center;
     padding: 10px;
-    color: whitesmoke;
-    position: fixed;
+    position: sticky;
+    background-color: #020c1b;
     height: 9vh;
     align-items: center;
     justify-content: center;
     width: 100%;
+
 }
 
 nav li {
@@ -72,6 +77,7 @@ nav li a {
     color: whitesmoke;
     font-size: 1.2em;
 }
+
 nav li a:hover {
     color: rgb(0, 251, 88);
     font-size: 1.3em;
@@ -134,9 +140,9 @@ span.indicator {
 
 .about {
     transition: ease-in 2s;
-    height: 100vh;
+    height: fit-content;
     color: whitesmoke;
-    padding: 200px 150px;
+    padding: 150px 150px;
     font-size: 1.1em;
 }
 
@@ -154,7 +160,7 @@ span.indicator {
     
 }
 
-.about .divider {
+.divider {
     display: inline-block;
     width: 120px;
     background-color: rgb(0, 251, 88);
@@ -179,5 +185,87 @@ span.indicator {
 }
 
 #experience {
-    height: 100vh;
+    transition: ease-in 2s;
+    height: fit-content;
+    color: whitesmoke;
+    padding: 150px 150px;
+    font-size: 1.1em;
+}
+
+.container-experience {
+    display: flex;
+    flex-direction: column;
+    width: 830px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.experience-title {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+} 
+
+
+.card-container {
+    margin: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    flex-wrap: wrap;
+    height: fit-content;
+    padding: 50px;
+    border-radius: 30px;
+    border: 1px solid var(--greenish);
+}
+
+
+.card-container h3 {
+    color: var(--greenish);
+    font-weight: 800;
+    font-size: 2.0em;
+    margin-bottom: 10px;
+}
+
+.card-container h4 {
+    color: whitesmoke;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.card-container p {
+    margin-bottom: 10px;
+}
+
+.card-container p::before {
+    content: "▹ ";
+    color: var(--greenish);
+}
+
+.card-container:hover {
+    animation: normal;
+    transform: scale(1.1);
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.exp-item-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.exp-item-container img {
+    width: auto;
+    height: 300px;
+    margin-left: 100px;
 }
