@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    overflow: scroll;
+    height: 100%;
+    width: 100%;
+}
+
+#particles-js {
+    position: absolute;
+    width: 80% !important;
+    height: 50% !important;
+    top: 25vh;
+    left: 10vw;
+}
+
+canvas {
+    opacity: 0.4;
+}
+
+section {
+    background-color: #020c1b;
+
+}
+
+section.landing {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header {
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    color: whitesmoke;
+    position: fixed;
+    height: 9vh;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+nav li {
+    display: inline-flex;
+    padding: 20px;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.2em;
+}
+nav li a:hover {
+    color: rgb(0, 251, 88);
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.introduction {
+    position: absolute;
+    top: 45vh !important;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    line-height: 1.7;
+    color: white;
+}
+
+.introduction .name {
+    color: rgb(0, 251, 88);
+    font-weight: 900;
+
+}
+
+.introduction h1 {
+    font-size: 2.6em;
+    color: whitesmoke;
+    font-weight: 900;
+}
+
+.introduction p {
+    font-size: 1.2em;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+span.indicator {
+    animation: blink 1s linear infinite;
+    background-color: rgb(0, 251, 88);
+    opacity: 1;
+    padding: 4px;
+    font-size: 0.8em;
+}
+
+.about {
+    transition: ease-in 2s;
+    height: 100vh;
+    color: whitesmoke;
+    padding: 200px 150px;
+    font-size: 1.1em;
+}
+
+.container-about {
+    display: flex;
+    flex-direction: column;
+    width: 830px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.container-about h1+p {
+    margin: 80px 0;
+    
+}
+
+.about .divider {
+    display: inline-block;
+    width: 120px;
+    background-color: rgb(0, 251, 88);
+    padding: 1px;
+    margin: 4px 0;
+
+}
+
+.tech-stack {
+    list-style: none;
+    display: inline-flex;
+    justify-content: flex-start;
+    font-size: 80px;
+}
+
+.tech-stack li {
+    padding: 30px;
+}
+
+.download-cv i {
+    color: rgb(0, 251, 88);
+}
+
+#experience {
+    height: 100vh;
+}

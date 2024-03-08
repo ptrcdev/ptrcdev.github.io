@@ -1,9 +1,96 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ptrcdev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/86124ecb03.js" crossorigin="anonymous"></script>
+    <script src="resources/particles.min.js" defer></script>
+    <script src="resources/custom.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
 
 <body>
-  <h1>Patricia Almeida</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+                <li>
+                    <a href="#home">Projects</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <div id="particles-js"></div>
+
+        <section class="landing" id="home">
+            <div class="introduction">
+                <h1>hey there, <span class="name">patrícia</span> here! <span class="indicator"></span></h1>
+                <p>I'm a software engineer from Portugal skilled in crafting innovative solutions with expertise in
+                    programming languages and modern methodologies</p>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container-about">
+                <h1 class="about-me">> about me <span class="divider"></span></h1>
+                <p>
+                    I'm a software engineer at <span class="highlight">OLX Group</span> working in the Standvirtual.com team. I attended <span class="highlight">Universidade da Beira Interior</span> for <span class="highlight">Computer Science</span>.
+                </p>
+                <p>These are some of the technologies I've been working with:</p>
+                <ul class="tech-stack">
+                    <li><i class="icon fab fa-html5"></i></li>
+                    <li><i class="icon fab fa-css3-alt"></i></li>
+                    <li><i class="icon fab fa-python"></i></li>
+                    <li><i class="fa-brands fa-java"></i></li>
+                    <li><i class="fa-brands fa-js"></i></li>
+                    <li><i class="fa-brands fa-php"></i></li>
+                </ul>
+                <p class="download-cv">Download my CV to see the full tech-stack. <a href="resources/CV 2.0.pdf" download><i class="fa-solid fa-download"></i></a></p>
+            </div>
+        </section>
+        <section id="experience">
+            <div class="scrollable">
+                <ul>
+                    <li>OLX Group</li>
+                    <li>Sagres Natura</li>
+                    <li>Sagres Sun Stay</li>
+                </ul>
+            </div>
+            <div class="description">
+                
+            </div>
+        </section>
+    </main>
+    
 </body>
 
 </html>
+
+<!--
+     <ul class="socials">
+                <li>
+                    <a href="https://www.linkedin.com/in/patr%C3%ADcia-almeida-a47a38229/" target="_blank"
+                        style="--color: white">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ptrcdev/" target="_blank" style="--color: white">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+-->
