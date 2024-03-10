@@ -1,6 +1,6 @@
 :root {
     --greenish: rgb(5, 220, 80);
-    --navyish: #2f2f2f
+    --navyish: #020c1b
 }
 * {
     margin: 0;
@@ -185,8 +185,10 @@ span.indicator {
 }
 
 #experience {
+    display: flex;
+    overflow: scroll;
+    flex-direction: column;
     transition: ease-in 2s;
-    height: fit-content;
     color: whitesmoke;
     padding: 150px 150px;
     font-size: 1.1em;
@@ -268,4 +270,65 @@ span.indicator {
     width: auto;
     height: 300px;
     margin-left: 100px;
+}
+
+#projects {
+    display: flex;
+    overflow: scroll;
+    flex-direction: column;
+    transition: ease-in 2s;
+    color: whitesmoke;
+    padding: 150px 150px;
+    font-size: 1.1em;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.project-list {
+    overflow: scroll;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.scroll-projects {
+    width: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.scroll-projects > p {
+    margin-right: 8px;
+}
+
+footer {
+    position: relative;
+    background-color: var(--navyish);
+    padding: 20px 0 40px 0;
+    text-align: center;
+    border-top: 1px solid;
+    color: whitesmoke;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+.social-icons a {
+    color: var(--greenish);
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons a:hover {
+    color: #007bff;
 }
